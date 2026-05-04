@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="lt">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Atsiųskite projektą — gaukite tiekimo variantus | RDX</title>
+<meta name="description" content="Atsiųskite projekto aprašą. Du–trys tiekimo variantai su pilna landed kaina per 48 valandas. Be įsipareigojimų, be mokesčio.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="/lt/" class="brand">RDX</a>
+      <ul class="nav-links">
+        <li><a href="/lt/granito-trinkeles.html">Granito trinkelės</a></li>
+        <li><a href="/lt/kaip-dirbame.html">Kaip dirbame</a></li>
+        <li><a href="/lt/projektai.html">Projektai</a></li>
+        <li><a href="/lt/kontaktai.html" class="active">Kontaktai</a></li>
+      </ul>
+      <ul class="lang-tabs">
+        <li><a href="/contact.html">EN</a></li>
+        <li><a href="/de/kontakt.html">DE</a></li>
+        <li><a href="/lt/kontaktai.html" class="current">LT</a></li>
+        <li><a href="/uk/kontakty.html">UA</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Meniu" aria-expanded="false"><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow">Kontaktai · Užklausa</span>
+        <h1>Atsiųskite projektą — grąžinsime tiekimo variantus.</h1>
+        <p class="lead">Du–trys realistiški tiekimo keliai per 48 valandas nuo pilno aprašo. Be įsipareigojimų, be mokesčio už pradinius variantus.</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <form id="rfq-form" class="form">
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="name">Vardas ir pavardė <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Jonas Jonaitis" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="company">Įmonė <span class="req">*</span></label>
+          <input type="text" id="company" name="company" required placeholder="UAB Projektai" autocomplete="organization">
+        </div>
+        <div class="form-field">
+          <label for="role">Pareigos</label>
+          <input type="text" id="role" name="role" placeholder="Projektų vadovas" autocomplete="organization-title">
+        </div>
+        <div class="form-field">
+          <label for="email">Darbo el. paštas <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="jus@imone.lt" autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="phone">Telefonas / WhatsApp</label>
+          <input type="tel" id="phone" name="phone" placeholder="+370..." autocomplete="tel">
+        </div>
+        <div class="form-field">
+          <label for="country">Pristatymo šalis <span class="req">*</span></label>
+          <select id="country" name="country" required>
+            <option value="">Pasirinkite šalį</option>
+            <option>Lietuva</option>
+            <option>Vokietija</option>
+            <option>Ukraina</option>
+            <option>Latvija</option>
+            <option>Estija</option>
+            <option>Kita ES</option>
+            <option>Kita</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="project_type">Projekto tipas <span class="req">*</span></label>
+          <select id="project_type" name="project_type" required>
+            <option value="">Pasirinkite tipą</option>
+            <option>Kraštovaizdis</option>
+            <option>Viešoji erdvė</option>
+            <option>Kelias / savivaldybė</option>
+            <option>Privatus / gyvenamasis</option>
+            <option>Komercinė lauko zona</option>
+            <option>Kita</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="volume">Apytikslė apimtis <span class="req">*</span></label>
+          <input type="text" id="volume" name="volume" required placeholder="pvz. 800 m²">
+        </div>
+        <div class="form-field full">
+          <label>Produktas <span class="req">*</span></label>
+          <div class="form-grid" style="gap: 0.5rem 1.5rem; margin-top: 0.5rem;">
+            <label class="form-consent"><input type="checkbox" name="product" value="paving_cubes"> Trinkelės</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="paving_slabs"> Grindinio plokštės</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="kerbs"> Bortai</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="steps"> Laiptai</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="coping"> Apdailos plokštės</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="other"> Kita</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="delivery_date">Pageidaujama pristatymo data</label>
+          <input type="date" id="delivery_date" name="delivery_date">
+        </div>
+        <div class="form-field">
+          <label for="file">Brėžiniai / sąmata / specifikacija</label>
+          <input type="file" id="file" name="file" accept=".pdf,.dwg,.xls,.xlsx,.doc,.docx">
+          <span class="hint">PDF, DWG, XLS, DOC iki 20 MB</span>
+        </div>
+        <div class="form-field full">
+          <label for="description">Projekto aprašymas <span class="req">*</span></label>
+          <textarea id="description" name="description" required placeholder="Trumpas aprašymas arba įklijuokite sąmatą / specifikaciją. Nurodykite pristatymo vietą, terminus ir specifinius reikalavimus."></textarea>
+        </div>
+        <div class="form-field full">
+          <label class="form-consent">
+            <input type="checkbox" name="consent" required>
+            <span>Sutinku, kad su manimi būtų susisiekta dėl šios užklausos. Jūsų duomenis naudosime tik atsakydami į projektą ir neperduosime trečioms šalims.</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Siųsti projekto aprašą</button>
+        <span class="note">Atsakysime per vieną darbo dieną.</span>
+      </div>
+      <div class="form-success" style="display:none; margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-accent-soft); border-left: 3px solid var(--color-accent); border-radius: 2px;">
+        <strong>Ačiū.</strong> Gavome Jūsų aprašą. Atsakysime per vieną darbo dieną. Skubiais atvejais rašykite WhatsApp arba skambinkite žemiau.
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Tiesioginis kontaktas</span>
+      <h2>Norite pasikalbėti iš pradžių?</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>WhatsApp</h4>
+        <a href="#">+[Telefonas]</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">Greičiausias atsakymas. Pir–Pen 9:00–18:00 Europos / Vilniaus l.</p>
+      </div>
+      <div class="contact-card">
+        <h4>El. paštas</h4>
+        <a href="mailto:hello@rdx.example">hello@rdx.example</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">Aprašams, dokumentams, oficialioms užklausoms.</p>
+      </div>
+      <div class="contact-card">
+        <h4>Telefonas</h4>
+        <a href="#">+[Telefonas]</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">Tiesiai su kategorijos vadovu.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <div class="section-header">
+      <span class="eyebrow">Biuras</span>
+      <h2>Kur esame.</h2>
+    </div>
+    <p class="muted">Būstinė [miestas, šalis]<br>
+    Registruotas subjektas: [įmonės pavadinimas, reg. nr.]<br>
+    PVM mok. kodas: [numeris]</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">RDX</div>
+        <p class="footer-tagline">Akmens tiekimas projektams. Granito grindinys, parūpintas ir pristatytas visoje Europoje.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Puslapis</h4>
+        <ul>
+          <li><a href="/lt/granito-trinkeles.html">Granito trinkelės</a></li>
+          <li><a href="/lt/kaip-dirbame.html">Kaip dirbame</a></li>
+          <li><a href="/lt/projektai.html">Projektai</a></li>
+          <li><a href="/lt/kontaktai.html">Kontaktai</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Kontaktai</h4>
+        <ul>
+          <li><a href="mailto:hello@rdx.example">hello@rdx.example</a></li>
+          <li><a href="#">+[Telefonas]</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 RDX. Visos teisės saugomos.</div>
+      <div class="footer-langs">
+        <a href="/">EN</a>
+        <a href="/de/">DE</a>
+        <a href="/lt/" class="current">LT</a>
+        <a href="/uk/">UA</a>
+      </div>
+      <div><a href="#">Privatumas</a> · <a href="#">Rekvizitai</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>

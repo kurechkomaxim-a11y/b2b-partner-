@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Send your project — get sourcing options | RDX</title>
+<meta name="description" content="Send a project brief. Two to three sourcing options with full landed pricing in 48 hours. No cost, no obligation.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="/" class="brand">RDX</a>
+      <ul class="nav-links">
+        <li><a href="/granite-paving.html">Granite Paving</a></li>
+        <li><a href="/how-we-work.html">How We Work</a></li>
+        <li><a href="/cases.html">Cases</a></li>
+        <li><a href="/contact.html" class="active">Contact</a></li>
+      </ul>
+      <ul class="lang-tabs">
+        <li><a href="/contact.html" class="current">EN</a></li>
+        <li><a href="/de/kontakt.html">DE</a></li>
+        <li><a href="/lt/kontaktai.html">LT</a></li>
+        <li><a href="/uk/kontakty.html">UA</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Menu" aria-expanded="false"><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow">Contact · RFQ</span>
+        <h1>Send your project — we'll return sourcing options.</h1>
+        <p class="lead">Two to three realistic sourcing paths within 48 hours of a complete brief. No obligation, no cost for the initial options.</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <form id="rfq-form" class="form">
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="name">Full name <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Jane Schmidt" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="company">Company <span class="req">*</span></label>
+          <input type="text" id="company" name="company" required placeholder="Schmidt GaLaBau GmbH" autocomplete="organization">
+        </div>
+        <div class="form-field">
+          <label for="role">Role</label>
+          <input type="text" id="role" name="role" placeholder="Project manager" autocomplete="organization-title">
+        </div>
+        <div class="form-field">
+          <label for="email">Work email <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="you@company.de" autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="phone">Phone / WhatsApp</label>
+          <input type="tel" id="phone" name="phone" placeholder="+49..." autocomplete="tel">
+        </div>
+        <div class="form-field">
+          <label for="country">Country of delivery <span class="req">*</span></label>
+          <select id="country" name="country" required>
+            <option value="">Select a country</option>
+            <option>Germany</option>
+            <option>Lithuania</option>
+            <option>Ukraine</option>
+            <option>Latvia</option>
+            <option>Estonia</option>
+            <option>Other EU</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="project_type">Project type <span class="req">*</span></label>
+          <select id="project_type" name="project_type" required>
+            <option value="">Select a type</option>
+            <option>Landscape</option>
+            <option>Public space</option>
+            <option>Road / municipal</option>
+            <option>Private / residential</option>
+            <option>Commercial outdoor</option>
+            <option>Other</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="volume">Approximate volume <span class="req">*</span></label>
+          <input type="text" id="volume" name="volume" required placeholder="e.g. 800 m²">
+        </div>
+        <div class="form-field full">
+          <label>Product <span class="req">*</span></label>
+          <div class="form-grid" style="gap: 0.5rem 1.5rem; margin-top: 0.5rem;">
+            <label class="form-consent"><input type="checkbox" name="product" value="paving_cubes"> Paving cubes</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="paving_slabs"> Paving slabs</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="kerbs"> Kerbs</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="steps"> Steps</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="coping"> Coping</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="other"> Other</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="delivery_date">Required delivery date</label>
+          <input type="date" id="delivery_date" name="delivery_date">
+        </div>
+        <div class="form-field">
+          <label for="file">Attach drawings / BOQ / spec</label>
+          <input type="file" id="file" name="file" accept=".pdf,.dwg,.xls,.xlsx,.doc,.docx">
+          <span class="hint">PDF, DWG, XLS, DOC up to 20 MB</span>
+        </div>
+        <div class="form-field full">
+          <label for="description">Project description <span class="req">*</span></label>
+          <textarea id="description" name="description" required placeholder="Short description, or paste BOQ / specification. Mention delivery point, timing, and any specific requirements."></textarea>
+        </div>
+        <div class="form-field full">
+          <label class="form-consent">
+            <input type="checkbox" name="consent" required>
+            <span>I agree to be contacted about this request. We only use your details to respond to your project and never share them with third parties.</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Send the project brief</button>
+        <span class="note">You'll hear back within 1 working day.</span>
+      </div>
+      <div class="form-success" style="display:none; margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-accent-soft); border-left: 3px solid var(--color-accent); border-radius: 2px;">
+        <strong>Thank you.</strong> We've received your brief. You'll hear back within 1 working day. For anything urgent, reach us on WhatsApp or phone below.
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Direct contact</span>
+      <h2>Prefer to talk first?</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>WhatsApp</h4>
+        <a href="#">+[phone]</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">Fastest response. Mon–Fri 9:00–18:00 CET.</p>
+      </div>
+      <div class="contact-card">
+        <h4>Email</h4>
+        <a href="mailto:hello@rdx.example">hello@rdx.example</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">For briefs, documents, and formal enquiries.</p>
+      </div>
+      <div class="contact-card">
+        <h4>Phone</h4>
+        <a href="#">+[phone]</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">Direct to the category lead.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <div class="section-header">
+      <span class="eyebrow">Office</span>
+      <h2>Where we're based.</h2>
+    </div>
+    <p class="muted">Headquartered in [city, country]<br>
+    Registered entity: [legal name, reg. number]<br>
+    VAT: [number]</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">RDX</div>
+        <p class="footer-tagline">Stone procurement for project-based work. Granite paving, sourced and delivered across Europe.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Site</h4>
+        <ul>
+          <li><a href="/granite-paving.html">Granite Paving</a></li>
+          <li><a href="/how-we-work.html">How We Work</a></li>
+          <li><a href="/cases.html">Cases</a></li>
+          <li><a href="/contact.html">Contact</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Contact</h4>
+        <ul>
+          <li><a href="mailto:hello@rdx.example">hello@rdx.example</a></li>
+          <li><a href="#">+[phone]</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 RDX. All rights reserved.</div>
+      <div class="footer-langs">
+        <a href="/" class="current">EN</a>
+        <a href="/de/">DE</a>
+        <a href="/lt/">LT</a>
+        <a href="/uk/">UA</a>
+      </div>
+      <div><a href="#">Privacy</a> · <a href="#">Imprint</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="assets/js/main.js"></script>
+</body>
+</html>

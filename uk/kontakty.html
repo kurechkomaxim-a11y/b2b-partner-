@@ -1,0 +1,225 @@
+<!DOCTYPE html>
+<html lang="uk">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Надішліть проєкт — отримайте варіанти постачання | RDX</title>
+<meta name="description" content="Надішліть опис проєкту. Два-три варіанти постачання з повною landed-ціною за 48 годин. Без зобов'язань, без плати.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Fraunces:opsz,wght@9..144,400;9..144,500&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/css/style.css">
+</head>
+<body>
+
+<header class="site-header">
+  <div class="container">
+    <nav class="nav">
+      <a href="/uk/" class="brand">RDX</a>
+      <ul class="nav-links">
+        <li><a href="/uk/granitna-brukivka.html">Гранітна бруківка</a></li>
+        <li><a href="/uk/yak-my-pratsyuyemo.html">Як ми працюємо</a></li>
+        <li><a href="/uk/proekty.html">Проєкти</a></li>
+        <li><a href="/uk/kontakty.html" class="active">Контакти</a></li>
+      </ul>
+      <ul class="lang-tabs">
+        <li><a href="/contact.html">EN</a></li>
+        <li><a href="/de/kontakt.html">DE</a></li>
+        <li><a href="/lt/kontaktai.html">LT</a></li>
+        <li><a href="/uk/kontakty.html" class="current">UA</a></li>
+      </ul>
+      <button class="nav-toggle" aria-label="Меню" aria-expanded="false"><span></span></button>
+    </nav>
+  </div>
+</header>
+
+<main>
+
+<section class="hero">
+  <div class="container">
+    <div class="hero-inner">
+      <div class="hero-content">
+        <span class="eyebrow">Контакти · Запит</span>
+        <h1>Надішліть проєкт — повернемо варіанти постачання.</h1>
+        <p class="lead">Два-три реалістичні шляхи постачання за 48 годин від повного брифу. Без зобов'язань, без плати за попередні варіанти.</p>
+      </div>
+      <div class="hero-visual" aria-hidden="true"></div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <form id="rfq-form" class="form">
+      <div class="form-grid">
+        <div class="form-field">
+          <label for="name">Повне ім'я <span class="req">*</span></label>
+          <input type="text" id="name" name="name" required placeholder="Олена Петренко" autocomplete="name">
+        </div>
+        <div class="form-field">
+          <label for="company">Компанія <span class="req">*</span></label>
+          <input type="text" id="company" name="company" required placeholder="ТОВ Проєкти" autocomplete="organization">
+        </div>
+        <div class="form-field">
+          <label for="role">Посада</label>
+          <input type="text" id="role" name="role" placeholder="Проєктний менеджер" autocomplete="organization-title">
+        </div>
+        <div class="form-field">
+          <label for="email">Робоча ел. пошта <span class="req">*</span></label>
+          <input type="email" id="email" name="email" required placeholder="vy@kompaniya.ua" autocomplete="email">
+        </div>
+        <div class="form-field">
+          <label for="phone">Телефон / WhatsApp</label>
+          <input type="tel" id="phone" name="phone" placeholder="+380..." autocomplete="tel">
+        </div>
+        <div class="form-field">
+          <label for="country">Країна доставки <span class="req">*</span></label>
+          <select id="country" name="country" required>
+            <option value="">Оберіть країну</option>
+            <option>Україна</option>
+            <option>Литва</option>
+            <option>Німеччина</option>
+            <option>Польща</option>
+            <option>Інша ЄС</option>
+            <option>Інше</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="project_type">Тип проєкту <span class="req">*</span></label>
+          <select id="project_type" name="project_type" required>
+            <option value="">Оберіть тип</option>
+            <option>Ландшафт</option>
+            <option>Громадський простір</option>
+            <option>Дорога / муніципалітет</option>
+            <option>Приватний / житловий</option>
+            <option>Комерційна зовнішня зона</option>
+            <option>Інше</option>
+          </select>
+        </div>
+        <div class="form-field">
+          <label for="volume">Приблизний обсяг <span class="req">*</span></label>
+          <input type="text" id="volume" name="volume" required placeholder="напр. 800 м²">
+        </div>
+        <div class="form-field full">
+          <label>Продукт <span class="req">*</span></label>
+          <div class="form-grid" style="gap: 0.5rem 1.5rem; margin-top: 0.5rem;">
+            <label class="form-consent"><input type="checkbox" name="product" value="paving_cubes"> Бруківка</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="paving_slabs"> Плити</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="kerbs"> Бордюри</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="steps"> Сходи</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="coping"> Оздоблення</label>
+            <label class="form-consent"><input type="checkbox" name="product" value="other"> Інше</label>
+          </div>
+        </div>
+        <div class="form-field">
+          <label for="delivery_date">Бажана дата доставки</label>
+          <input type="date" id="delivery_date" name="delivery_date">
+        </div>
+        <div class="form-field">
+          <label for="file">Креслення / кошторис / специфікація</label>
+          <input type="file" id="file" name="file" accept=".pdf,.dwg,.xls,.xlsx,.doc,.docx">
+          <span class="hint">PDF, DWG, XLS, DOC до 20 МБ</span>
+        </div>
+        <div class="form-field full">
+          <label for="description">Опис проєкту <span class="req">*</span></label>
+          <textarea id="description" name="description" required placeholder="Короткий опис або вставте кошторис / специфікацію. Вкажіть місце доставки, терміни та специфічні вимоги."></textarea>
+        </div>
+        <div class="form-field full">
+          <label class="form-consent">
+            <input type="checkbox" name="consent" required>
+            <span>Даю згоду на зв'язок щодо цього запиту. Ваші дані використовуємо лише для відповіді на проєкт і не передаємо третім сторонам.</span>
+          </label>
+        </div>
+      </div>
+      <div class="form-actions">
+        <button type="submit" class="btn btn-primary">Надіслати опис проєкту</button>
+        <span class="note">Відповідаємо протягом одного робочого дня.</span>
+      </div>
+      <div class="form-success" style="display:none; margin-top: 1.5rem; padding: 1rem 1.25rem; background: var(--color-accent-soft); border-left: 3px solid var(--color-accent); border-radius: 2px;">
+        <strong>Дякуємо.</strong> Отримали ваш опис. Відповімо протягом одного робочого дня. У термінових випадках пишіть у WhatsApp або телефонуйте нижче.
+      </div>
+    </form>
+  </div>
+</section>
+
+<section class="section-alt">
+  <div class="container">
+    <div class="section-header">
+      <span class="eyebrow">Прямий контакт</span>
+      <h2>Хочете спочатку поговорити?</h2>
+    </div>
+    <div class="contact-grid">
+      <div class="contact-card">
+        <h4>WhatsApp</h4>
+        <a href="#">+[телефон]</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">Найшвидша відповідь. Пн–Пт 9:00–18:00 за київським часом.</p>
+      </div>
+      <div class="contact-card">
+        <h4>Ел. пошта</h4>
+        <a href="mailto:hello@rdx.example">hello@rdx.example</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">Для брифів, документів, офіційних запитів.</p>
+      </div>
+      <div class="contact-card">
+        <h4>Телефон</h4>
+        <a href="#">+[телефон]</a>
+        <p class="muted small" style="margin-top: 0.5rem; margin-bottom: 0;">Напряму з керівником категорії.</p>
+      </div>
+    </div>
+  </div>
+</section>
+
+<section>
+  <div class="container-narrow">
+    <div class="section-header">
+      <span class="eyebrow">Офіс</span>
+      <h2>Де ми.</h2>
+    </div>
+    <p class="muted">Головний офіс [місто, країна]<br>
+    Реєстрована особа: [назва компанії, ЄДРПОУ]<br>
+    Код платника ПДВ: [номер]</p>
+  </div>
+</section>
+
+</main>
+
+<footer class="site-footer">
+  <div class="container">
+    <div class="footer-top">
+      <div>
+        <div class="footer-brand">RDX</div>
+        <p class="footer-tagline">Постачання каменю для проєктних робіт. Гранітна бруківка, підібрана й доставлена по всій Європі.</p>
+      </div>
+      <div class="footer-col">
+        <h4>Сайт</h4>
+        <ul>
+          <li><a href="/uk/granitna-brukivka.html">Гранітна бруківка</a></li>
+          <li><a href="/uk/yak-my-pratsyuyemo.html">Як ми працюємо</a></li>
+          <li><a href="/uk/proekty.html">Проєкти</a></li>
+          <li><a href="/uk/kontakty.html">Контакти</a></li>
+        </ul>
+      </div>
+      <div class="footer-col">
+        <h4>Контакти</h4>
+        <ul>
+          <li><a href="mailto:hello@rdx.example">hello@rdx.example</a></li>
+          <li><a href="#">+[телефон]</a></li>
+          <li><a href="#">WhatsApp</a></li>
+        </ul>
+      </div>
+    </div>
+    <div class="footer-bottom">
+      <div>© 2026 RDX. Усі права захищені.</div>
+      <div class="footer-langs">
+        <a href="/">EN</a>
+        <a href="/de/">DE</a>
+        <a href="/lt/">LT</a>
+        <a href="/uk/" class="current">UA</a>
+      </div>
+      <div><a href="#">Конфіденційність</a> · <a href="#">Реквізити</a></div>
+    </div>
+  </div>
+</footer>
+
+<script src="../assets/js/main.js"></script>
+</body>
+</html>
